@@ -17,7 +17,8 @@
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "prepare": "npm run build"
+    "prepare": "husky",
+    "verify": "npm run build"
   },
   "dependencies": {
     "@metyatech/workspace-template-generator": "github:metyatech/workspace-template-generator",
@@ -28,6 +29,7 @@
   },
   "devDependencies": {
     "@types/react": "^19.1.16",
+    "husky": "^9.1.7",
     "typescript": "~5.9.2"
   }
 }
