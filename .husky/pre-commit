@@ -1,1 +1,1 @@
-npm run verify
+npm run verify; npx compose-agentsmd --compose; git add AGENTS.md

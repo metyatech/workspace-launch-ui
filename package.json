@@ -17,19 +17,37 @@
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "lint": "eslint src",
+    "format": "prettier --write src",
+    "test": "vitest run",
     "prepare": "husky",
-    "verify": "npm run build"
+    "verify": "npm run build && npm run lint && npm run test"
   },
   "dependencies": {
     "@metyatech/workspace-template-generator": "github:metyatech/workspace-template-generator",
     "clsx": "^2.1.1"
   },
   "peerDependencies": {
-    "react": ">=18.0.0"
+    "react": ">=18.0.0",
+    "@docusaurus/router": "*",
+    "@docusaurus/useBaseUrl": "*",
+    "@docusaurus/Link": "*"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
     "@types/react": "^19.1.16",
+    "@vitejs/plugin-react": "^5.1.4",
+    "eslint": "^9.39.4",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "globals": "^17.4.0",
     "husky": "^9.1.7",
-    "typescript": "~5.9.2"
+    "jsdom": "^28.1.0",
+    "prettier": "^3.8.1",
+    "typescript": "~5.9.2",
+    "typescript-eslint": "^8.56.1",
+    "vitest": "^4.0.18"
   }
 }

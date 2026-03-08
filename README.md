@@ -36,3 +36,19 @@ const href = useWorkspaceLaunchUrl({
 ```
 
 `useWorkspaceLaunchUrl` はページ URL を元に一意なワークスペース ID を生成し、テンプレートの競合を防ぎます。
+
+## Development
+
+This project uses ESLint, Prettier, and Vitest.
+
+### Available Scripts
+
+- `npm run build`: Build the project with TypeScript.
+- `npm run lint`: Run ESLint to check for code style issues.
+- `npm run format`: Run Prettier to format the code.
+- `npm run test`: Run automated tests with Vitest.
+- `npm run verify`: Run build, lint, and test to verify the project.
+
+### Standards
+
+This project follows the rules defined in [AGENTS.md](./AGENTS.md).
