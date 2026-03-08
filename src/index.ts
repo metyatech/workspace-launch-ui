@@ -1,5 +1,5 @@
 export { useWorkspaceLaunchUrl } from './useWorkspaceLaunchUrl.js';
 export {
-	WorkspaceLaunchButton,
-	WorkspaceLaunchButton as default,
+  WorkspaceLaunchButton,
+  WorkspaceLaunchButton as default,
 } from './WorkspaceLaunchButton.js';
